@@ -8,8 +8,6 @@ try {
         await FirebaseAuth.instance.createUserWithEmailAndPassword(
       email: emailAddress,
       password: password,
-      
-    
     );
   } on FirebaseAuthException catch (e) {
     if (e.code == 'weak-password') {
